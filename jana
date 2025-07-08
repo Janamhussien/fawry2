@@ -1,0 +1,72 @@
+<?php
+$inventory = [
+    [
+        "type" => "Paper book",
+        "isbn" => "1234",
+        "title" => "PaperB",
+        "year" =>"2005",
+        "price" => "350"
+        "quantity" => 5,
+        "shipped" => true
+    ],
+    [
+        "type" => "EBook",
+        "isbn" => "5678",
+        "title" => "Ebusiness",
+        "year" =>"1998",
+        "price" => "120"
+        "quantity" => 2,
+        "file type" =>"pdf",
+        "shipped" => false
+    ],
+     [
+        "type" => "Showcase",
+        "isbn" => "8907",
+        "title" => "show",
+        "year" =>"1998",
+        "price" => "500"
+        "quantity" => 0,
+        "shipped" => false
+    ],
+];
+function addbook($inventory,$book){
+    $inventory[] = $book;
+    echo "a $book is added to quantam book store inventory";
+}
+function removebook($inventory,$olderbooks){
+    $currentyear = date("Y");
+    foreach ($inventory as $i => $book){
+        if($currentyear-$book["year"]> $olderbooks)
+            echo "a $book is removed to quantam book as it old";
+    }
+}
+function buybook($inventory,$isbn,$quant,$emai,$address){
+    $currentyear = date("Y");
+    foreach ($inventory as $x){
+        if($book["isbn"]==$isbn){
+                    if($book["type"]==$'showcase'){
+                echo "a $book is not for sale";
+        }
+    }
+    if($quant> $book["quantity"]){
+                echo "there is $quant left of $book";
+        }
+        if($book["type"]=="paper"){
+                echo "send $book to $address";
+        }else{
+            echo "send $book to $email";
+        }
+            echo"paid amount is $total";
+
+    }
+}
+$newbook = [
+    "type" => "paper",
+        "isbn" => "111111",
+        "title" => "jana",
+        "year" =>"2004",
+        "price" => "2000"
+        "quantity" => 4,
+        "shipped" => true
+];
+?>
