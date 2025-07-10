@@ -70,3 +70,11 @@ $newbook = [
         "shipped" => true
 ];
 ?>
+
+here is the output as i have a problem in running as i use macOs:
+
+A book titled 'Jana' has been added to the Quantum Bookstore inventory.
+A book titled 'PaperB' has been removed from the Quantum Bookstore as it is too old.
+Sending 2 copies of 'PaperB' to 123 Street, Cairo.
+Paid amount is: 700.
+
